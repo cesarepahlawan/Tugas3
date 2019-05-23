@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="menustyle.css">
+	<Style type="text/css">
+h1{
+	font-size:200%;
+	background-color:grey;
+	color:black;
+	-webkit-text-fill-color:#426E86;
+	-webkit-text-stroke-width:1px;
+	font-family: futura;
+}
+img{
+	max-width: :100%;
+	background-color: #2F3131;
+	background-size:cover;
+	padding-right:58% ;
+	padding-left:42%;
+}
+
+p{
+	text-transform: capitalize;
+	font-size: 150%;
+	font-family: futura;
+	background-color: #2F3131;
+	-webkit-text-fill-color:#426E86;
+	-webkit-text-stroke-width:1px;
+
+}
+</Style>
+<style type="text/css">
+nav{
+white-space: nowrap;
+text-decoration: none;
+	text-transform: uppercase;
+	font-size:40px;
+	-webkit-text-fill-color:#426E86;
+	-webkit-text-stroke-width:0,5px;
+	background-color: #2F3131;
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+
+}
+a:hover
+{
+-webkit-text-fill-color:#00FA9A;
+}
+</Style>
+</style>
+</head>
+<body>
+	<?php
+<nav>
+  <ul>
+  <li><a href="biod.html">Biodata</a></li>
+  <li><a href="materi.html">MateriKuliah</a></li>
+  <li><a href="search.html">Search</a></li>
+ <li><a href="val.php">Form</a></li>
+  </ul>
+</nav>?>
+<h1 style="text-align: center;">BIODATA</h1>
+<img src="pic1.jpg" alt="asss" width="16%">
+
+<p id="skuy"></p>
+<script>
+
+	function desc(nama, ttl, alt, agm, gender, pekerjaan) {
+	this.name=nama;
+	this.ttl=ttl;
+	this.alt=alt;
+	this.agm=agm;
+	this.gender=gender;
+	this.pkrj=pekerjaan;
+	}
+	var saya = new desc("cesare pahlawan abulebu", "10-11-1999", "jl.st.hassanudin.no 23", "islam", "laki laki", "mahasiswa");
+	document.getElementById("skuy").innerHTML= 
+	"Nama:"+saya.name+"<br>"+
+	"tanggal lahir:"+saya.ttl+"<br>"+
+	"alamat:"+saya.alt+"<br>"+
+	"agama:"+saya.agm+"<br>"+
+	"gender:"+saya.gender+"<br>"+
+	"pekerjaan:"+saya.pkrj;
+
+
+
+</script>
+</body>
+</html>
